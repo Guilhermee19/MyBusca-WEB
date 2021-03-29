@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Xiaomi Redmi 9",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41s708mKqJL._AC_.jpg",
+      "description": "64GB/4GB Dual Chip - Carbon Grey",
+      "store": [
+        {
+          "id": 1,
+          "name": "Amazon",
+          "price": 1074.9,
+          "parceled": 1074.9,
+          "plots": 10,
+          "url": "https://www.amazon.com.br/Celular-Xiaomi-Redmi-64GB-Dual/dp/B08B3QSVM6",
+          "dateCreate": "27-03-2021",
+          "dateUpdate": "27-03-2021",
+          "status": null
+        }
+      ],
+      "dateCreate": "27-03-2021",
+      "dateUpdate": "27-03-2021"
+    },
+    {
+      "id": 2,
+      "name": "Logitech C920",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71iNwni9TsL._AC_SL1500_.jpg",
+      "description": "Full HD 1080p Preta",
+      "store": [
+        {
+          "id": 1,
+          "name": "Amazon",
+          "price": 461,
+          "parceled": 461,
+          "plots": 10,
+          "url": "https://www.amazon.com.br/",
+          "dateCreate": "27/03/2021",
+          "dateUpdate": "27/03/2021",
+          "status": null
+        }
+      ],
+      "dateCreate": "27/03/2021",
+      "dateUpdate": "27/03/2021"
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy A51",
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img/1803603/2/1803603294_1GG.jpg",
+      "description": "128GB 4G Wi-Fi Tela 6.5'' Dual Chip 4GB RAM",
+      "store": [
+        {
+          "id": 3,
+          "name": "Americanas",
+          "price": 1699,
+          "parceled": 1887.78,
+          "plots": 12,
+          "url": "https://www.americanas.com.br/produto/1803603251?epar=ZOOM&s_term=YYNKZU&opn=YSMESP&hl=lower&loja=02",
+          "dateCreate": "27/03/2021",
+          "dateUpdate": "27/03/2021",
+          "status": null
+        }
+      ],
+      "dateCreate": "27/03/2021",
+      "dateUpdate": "27/03/2021"
+    }
+  ],
+  "store": [
+    {
+      "id": 1,
+      "name": "Amazon",
+      "url": "https://www.amazon.com.br/"
+    },
+    {
+      "id": 2,
+      "name": "Kabum",
+      "url": "https://www.kabum.com.br/"
+    },
+    {
+      "id": 3,
+      "name": "Americanas",
+      "url": "https://www.americanas.com.br/"
+    }
+  ]
+}

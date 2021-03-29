@@ -1,0 +1,64 @@
+<div class="modal-content">
+    <div class="box-central">
+
+        <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+            <div class="title"> {{ title }} </div>
+
+            <div style="font-size: 17px; cursor: pointer;" (click)="modalRef.hide()">
+                <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png" width="20px">
+            </div>
+        </div>
+        
+        <div class="div-inputs" *ngIf="!loading">
+            <mat-form-field>
+                <mat-label> Nome </mat-label>
+                <input matInput [value]="name">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label> Descrição </mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label> Imagem produto </mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label> Loja </mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let store of list_store" [value]="store" (click)="selectStore(store)">
+                        {{store.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <div style="width: 100%; flex-wrap: wrap; display: flex; justify-content: space-between;">
+                <mat-form-field class="div-break">
+                    <mat-label> Preço a Vista </mat-label>
+                    <input matInput type="number">
+                </mat-form-field>
+    
+                <mat-form-field  class="div-break">
+                    <mat-label> Preço Parcela </mat-label>
+                    <input matInput type="number">
+                </mat-form-field>
+            </div>
+
+            <mat-form-field>
+                <mat-label> Numero de parcerlas </mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label> Url Site </mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
+
+        <button mat-button class="buttonP" (click)="saveNew()">
+            {{ textButton }}
+        </button>
+    </div>
+</div>

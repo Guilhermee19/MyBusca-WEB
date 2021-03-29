@@ -1,0 +1,48 @@
+.move{
+    transition: all .5s;
+    transform: translate3d(-70%, 0, 0);
+}
+.moveTitle{
+    transition: all .5s;
+    transform: translate3d(55px, 0, 0);
+}
+
+
+.lateral{
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 56px 0 10px 5px;
+    z-index: 10;
+    color: black;
+    background-color: blueviolet;
+    transition: all .5s;
+}
+
+.options{
+    width: 100%;
+    transition: all .2s;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options:hover{
+    transition: all .2s;
+    font-weight: 500;
+    padding: 10px 10px 10px 15px;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    object-fit: contain;
+}

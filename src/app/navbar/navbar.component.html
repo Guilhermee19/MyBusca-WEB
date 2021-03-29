@@ -1,0 +1,37 @@
+<div style="position: relative;">
+
+    <mdb-navbar class="menuTop" SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+        <mdb-navbar-brand>
+            <a class="navbar-brand" (click)="checkNavbar()" 
+            style="cursor: pointer; transition: all .5s;" [ngClass]="{ 'moveTitle' : showFiller }"> 
+                Navbar 
+            </a>
+        </mdb-navbar-brand>
+      
+        <links>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect> 
+                        <mat-slide-toggle [checked]="isColor"></mat-slide-toggle>
+                    </a>
+                </li>
+            </ul>
+        </links>
+    </mdb-navbar>
+    
+    <div class="lateral" [ngClass]="{ 'move' : !showFiller }">
+        <div style="height: 10px;"></div>
+        <div class="options" routerLink="/product">
+            <span> Produtos </span>
+            <img src="../../assets/icons/product.png" class="icons">
+        </div>
+        <div class="options"> 
+            <span> Gastos </span>    
+            <img src="../../assets/icons/search.png" class="icons">
+        </div>
+    </div>
+</div>
+
+<div style="width: 100%; padding: 0 0 0 60px;">
+    <router-outlet></router-outlet>
+</div>

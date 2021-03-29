@@ -1,0 +1,71 @@
+::ng-deep .modal-open .modal{
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+button, input, textarea{
+    outline:none !important;
+}
+
+.modal-content{
+    padding: 40px 10px;
+}
+/* @media screen and (max-width:400px){
+    .modal-content{
+        padding: 10px;
+        max-height: 550px;
+    }
+} */
+::ng-deep .modal-dialog .modal-content {
+    border-radius: 10px !important;
+}
+
+.box-central{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width:400px){
+    .box-central{
+        padding: 50px 10px;
+    }
+}
+
+button{
+    position: relative;
+    max-height: 35px;
+    padding: 10px 20px !important;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 26px;
+    font-weight: 500;
+    color: blueviolet;
+}
+
+.div-inputs{
+    width: 80%;
+    margin: 40px auto 20px;
+}
+
+.div-inputs .input{
+    font-size: calc(16px + 0.4vw);
+}
+
+.div-break{
+    width: 48%;
+}
+
+.buttonP{
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}

@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './page/home/home.component';
-import { NavbarComponent } from './page/navbar/navbar.component';
-
+import { NavbarComponent } from 'angular-bootstrap-md';
+import { HomeComponent } from './home/home.component';
+import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-    { path: '', component: NavbarComponent,
-        children:[
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
-        ]
-    },
-    
+  { path: '', component: NavbarComponent,
+      children:[
+          { path: '', redirectTo: 'home', pathMatch: 'full' },
+          { path: 'home', component: HomeComponent },
+          { path: 'product', component: ProductsComponent },
+      ]
+  },
+  // {path:'**', redirectTo: '/' }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled'})],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

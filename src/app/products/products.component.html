@@ -1,0 +1,22 @@
+<div class="screen">
+    <div class="div-top">
+        <h2> Produtos </h2>
+        <button mat-button class="buttonP" (click)="newProduct()">
+            Adicionar
+        </button>
+    </div>
+    <div *ngIf="!loading" style="width: 100%; display: flex; justify-content: space-evenly;">
+        <div *ngFor="let item of listProduct">
+            <div class="product">
+                <img [src]="item.image" class="img-product" >
+                <div class="title"> {{ item?.name }} </div>
+                <div class="loja"> {{ item.store[0]?.name }} </div>
+                <div class="price"> {{ convertMoney(item.store[0]?.price) }} </div>
+            </div>
+        </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+    </div>
+</div>
